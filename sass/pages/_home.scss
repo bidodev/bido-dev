@@ -1,0 +1,98 @@
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+}
+
+.profile {
+  margin: 0 auto;
+  max-width: 65rem;
+  box-shadow: -2px 5px 1rem 0 rgba($color-black, 0.26),
+    2px 5px 1rem 0 rgba($color-black, 0.26);
+
+  &__cover {
+    background-image: url("../img/cover.png");
+    position: relative;
+  }
+
+  &__overlay {
+    background-color: rgba($color-black, 0.5);
+    height: 12rem;
+    width: 100%;
+  }
+
+  &__name {
+    position: absolute;
+    font-weight: 700;
+    top: 10px;
+    left: 120px;
+    font-size: 25px;
+    color: $color-grey-light;
+    z-index: 5;
+    padding-bottom: 2rem;
+  }
+
+  &__photo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+  }
+}
+
+#profile__bio {
+  font-size: $default-font-size;
+  line-height: 2rem;
+  position: absolute;
+  padding: 5rem 5px 0px 120px;
+  width: 100%;
+  color: $color-grey-light;
+  height: 12rem;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.profile__link {
+  &__block {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    padding: 5px 5px;
+    line-height: 50px;
+
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+  &__logo {
+    float: left;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5px;
+  }
+
+  &__handle {
+    color: #000;
+    margin-left: 65px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: $default-font-size;
+  }
+}
+
+@media (max-width: 400px) {
+  .profile__name {
+    top: 15px;
+    font-size: 19px;
+  }
+
+  #profile-bio {
+    padding-top: 39px;
+    height: 99px;
+  }
+}

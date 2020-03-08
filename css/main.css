@@ -1,1 +1,133 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  background-image: url("../static/img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #777;
+  background-position: 50% 0%;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  color: #777;
+  padding: 3rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+}
+
+.profile {
+  margin: 0 auto;
+  max-width: 65rem;
+  -webkit-box-shadow: -2px 5px 1rem 0 rgba(0, 0, 0, 0.26), 2px 5px 1rem 0 rgba(0, 0, 0, 0.26);
+          box-shadow: -2px 5px 1rem 0 rgba(0, 0, 0, 0.26), 2px 5px 1rem 0 rgba(0, 0, 0, 0.26);
+}
+
+.profile__cover {
+  background-image: url("../img/cover.png");
+  position: relative;
+}
+
+.profile__overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 12rem;
+  width: 100%;
+}
+
+.profile__name {
+  position: absolute;
+  font-weight: 700;
+  top: 10px;
+  left: 120px;
+  font-size: 25px;
+  color: #f7f7f7;
+  z-index: 5;
+  padding-bottom: 2rem;
+}
+
+.profile__photo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #fff;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+#profile__bio {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  position: absolute;
+  padding: 5rem 5px 0px 120px;
+  width: 100%;
+  color: #f7f7f7;
+  height: 12rem;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.profile__link__block {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  padding: 5px 5px;
+  line-height: 50px;
+}
+
+.profile__link__block:hover {
+  background-color: #55c57a;
+}
+
+.profile__link__logo {
+  float: left;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5px;
+}
+
+.profile__link__handle {
+  color: #000;
+  margin-left: 65px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 400px) {
+  .profile__name {
+    top: 15px;
+    font-size: 19px;
+  }
+  #profile-bio {
+    padding-top: 39px;
+    height: 99px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

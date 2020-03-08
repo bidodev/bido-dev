@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //this define how much 1rem is.
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-image: url("../static/img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $color-grey;
+  background-position: 50% 0%;
+}
